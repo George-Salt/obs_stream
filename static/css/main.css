@@ -53,7 +53,7 @@ main .remaining {
   font-size: 50px;
 }
 
-main .comment {
+main .person {
   background: #1f1f1f;
   display: flex;
   gap: 5px;
@@ -65,7 +65,7 @@ main .comment {
   border-bottom-right-radius: 25px;
 }
 
-main .comment .avatar {
+main .person .avatar {
   min-width: 60px;
   height: 60px;
   background: white;
@@ -78,15 +78,15 @@ main .comment .avatar {
   font-size: 30px;
 }
 
-main .comment.romega .avatar {
+main .person.romega .avatar {
   background-image: url("../img/romega.png");
 }
 
-main .comment.igoreka .avatar {
+main .person.igoreka .avatar {
   background-image: url("../img/igoreka.png");
 }
 
-main .comment .content {
+main .person .content {
   width: 100%;
   padding: 10px 15px;
   display: flex;
@@ -96,7 +96,7 @@ main .comment .content {
   border-radius: 20px;
 }
 
-main .comment .name {
+main .person .name {
   color: gray;
   font-weight: 400;
   width: max-content;
@@ -106,7 +106,7 @@ main .comment .name {
   gap: 5px;
 }
 
-main .comment .name span {
+main .person .name span {
   font-size: 12px;
   background: #e91e63;
   color: black;
@@ -117,20 +117,20 @@ main .comment .name span {
   justify-content: center;
 }
 
-main .comment .name span.alpha {
+main .person .name span.alpha {
   background: #886ce4;
 }
 
-main .comment .name span.beta {
+main .person .name span.beta {
   background: #ff7727;
 }
 
-main .comment .name span.sigma {
+main .person .name span.sigma {
   background: #fce100;
   color: black;
 }
 
-main .comment .text {
+main .person .text {
   color: white;
   font-size: 15px;
 }
