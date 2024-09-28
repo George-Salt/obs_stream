@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+
+  <title>Пример страницы</title>
+
+  <link href="static/css/main.css" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <div class="container header">
+      <p>@george20097</p>
+
+      <h1>ПОДПИШИСЬ,<br>попади в розыгрыш</h1>
+    </div>
+
+    <div class="container">
+      <div class="comment romega">
+        <div class="avatar"></div>
+        <div class="content">
+          <p class="name">@_Romega_<span class="alpha">alpha</span><span>0 XLT</span></p>
+          <p class="text">Лорд Челленджей</p>
+        </div>
+      </div>
+
+      <div class="comment">
+        <div class="avatar">?</div>
+        <div class="content">
+          <p class="name">???<span class="beta">beta</span><span>0 XLT</span></p>
+          <p class="text">Ищем лидера клана...</p>
+        </div>
+      </div>
+
+      <div class="comment igoreka">
+        <div class="avatar"></div>
+        <div class="content">
+          <p class="name">@Igoreka<span class="sigma">sigma</span><span>0 XLT</span></p>
+          <p class="text">Админ Острова</p>
+        </div>
+      </div>
+    </div>
+
+    <h1>До следующего<br>розыгрыша:<h1>
+
+    <p class="remaining">180</p>
+  </main>
+
+  <script>
+    let remainingTimeElement = document.querySelector("main .remaining");
+
+    let time = 30;
+    remainingTimeElement.textContent = time;
+
+    let interval = setInterval(() => {
+      remainingTimeElement.textContent = remainingTimeElement.textContent - 1;
+    }, 1000);
+
+    setTimeout(() => { clearInterval(interval); }, time * 1000);
+  </script>
+</body>
+
+</html>

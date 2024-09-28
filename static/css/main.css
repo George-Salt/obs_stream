@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@500;800&display=swap");
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Unbounded", sans-serif;
+  background: url("../img/background.png");
+  background-size: cover;
+}
+
+
+main .button {
+  padding: 10px 15px;
+  background: #eee;
+  border: 2px solid #ddd;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+
+main {
+  height: 100%;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+main h1 {
+  text-align: center;
+  font-size: 25px;
+}
+
+main .header {
+  text-align: center;
+}
+
+main .container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+main .remaining {
+  font-size: 50px;
+}
+
+main .comment {
+  background: #1f1f1f;
+  display: flex;
+  gap: 5px;
+  width: 350px;
+  padding: 5px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 25px;
+}
+
+main .comment .avatar {
+  min-width: 60px;
+  height: 60px;
+  background: white;
+  background-size: cover;
+  border-radius: 50%;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+main .comment.romega .avatar {
+  background-image: url("../img/romega.png");
+}
+
+main .comment.igoreka .avatar {
+  background-image: url("../img/igoreka.png");
+}
+
+main .comment .content {
+  width: 100%;
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background: black;
+  border-radius: 20px;
+}
+
+main .comment .name {
+  color: gray;
+  font-weight: 400;
+  width: max-content;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+main .comment .name span {
+  font-size: 12px;
+  background: #e91e63;
+  color: black;
+  padding: 2px 5px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .comment .name span.alpha {
+  background: #886ce4;
+}
+
+main .comment .name span.beta {
+  background: #ff7727;
+}
+
+main .comment .name span.sigma {
+  background: #fce100;
+  color: black;
+}
+
+main .comment .text {
+  color: white;
+  font-size: 15px;
+}
